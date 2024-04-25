@@ -1,5 +1,7 @@
 export function Banner() {
   return (
-    <h1>PLEASE KILL ME</h1>
+    <div className="banner">
+      <h1 className="name">Eli Banchik</h1>
+    </div>
   )
 }

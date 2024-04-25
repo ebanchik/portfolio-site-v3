@@ -1,3 +1,23 @@
 html {
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: 'Lingkawi';
+  src: url('../public/Lingkawi-South.otf') format('opentype');
+}
+
+.banner {
+  height: 100wh;
+  width: 100vw;
+}
+
+.name {
+  position: absolute;
+  font-size: 225pt;
+  font-family: 'Lingkawi';
+  top: 20%;
+  left: 5vw;
+
+}
+

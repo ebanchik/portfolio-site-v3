@@ -1,10 +1,14 @@
 import { Banner } from "./Banner.jsx"
 import './App.css'
+import Header from './Header';
 
 function App() {
 
   return (
-    <Banner/>
+    <div>
+      <Banner/>
+      <Header/>
+    </div>
   )
 }
 

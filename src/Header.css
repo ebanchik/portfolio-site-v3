@@ -19,34 +19,45 @@
   background-color: black;
   border-radius: 50%;
   cursor: pointer;
+  transition: transform 0.3s ease; /* Ensure resizing is smooth */
+  animation: pulse 1.5s infinite ease-in-out; /* Pulse animation applied */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Scale up to 120% */
+  }
 }
 
 .header-options-left {
   position: absolute;
   top: 25px;
-  left: 0px;
+  left: 0;
   visibility: hidden;
   opacity: 0;
   transform: translateY(-20px);
-  transition: visibility 0s linear 0.5s, opacity 0.5s, transform 0.5s; /* Visibility transitions out after all texts have animated out */
+  transition: visibility 0s linear 0.5s, opacity 0.5s, transform 0.5s; /* Manage visibility and transformation */
 }
 
 .header-options-left p {
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 0.5s, transform 0.5s;
-  transition-delay: var(--delay-out); /* Different delay for cascading out */
+  transition-delay: var(--delay-out); /* Delay for cascading out effect */
 }
 
 .hover-area-left:hover .header-options-left {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
-  transition: visibility 0s 0s, opacity 0.5s, transform 0.5s; /* Visibility transitions in immediately */
+  transition: visibility 0s 0s, opacity 0.5s, transform 0.5s; /* Immediate visibility change when hovered */
 }
 
 .hover-area-left:hover .header-options-left p {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: var(--delay-in); /* Different delay for cascading in */
+  transition-delay: var(--delay-in); /* Delay for cascading in effect */
 }

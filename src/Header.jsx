@@ -13,10 +13,10 @@ export const Header = () => {
       >
         {isHovering && (
           <div className="header-options-left">
-            <p>ABOUT</p>
-            <p>WORK</p>
-            <p>FF</p>
-            <p>LINKS</p>
+            <p style={{ animationDelay: '0s' }}>ABOUT</p>
+            <p style={{ animationDelay: '0.1s' }}>WORK</p>
+            <p style={{ animationDelay: '0.2s' }}>FF</p>
+            <p style={{ animationDelay: '0.3s' }}>LINKS</p>
           </div>
         )}
         <div className="circle-left"></div>

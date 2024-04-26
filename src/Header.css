@@ -15,8 +15,8 @@
 }
 
 .circle-left {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-color: black;
   border-radius: 50%;
   cursor: pointer;
@@ -25,13 +25,25 @@
 .header-options-left {
   display: none;
   position: absolute;
-  top: 20px;  /* Adjust based on circle size and desired dropdown start point */
+  top: 20px;
   left: -5px;
   padding: 5px;
-  border-radius: 5px;
   z-index: -1;
 }
 
 .hover-area-left:hover .header-options-left {
-  display: block; /* Show the options when hovering */
+  display: block;
+}
+
+.header-options-left p {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: cascadeIn 0.5s forwards;
+}
+
+@keyframes cascadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

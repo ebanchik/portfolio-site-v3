@@ -5,7 +5,7 @@ html {
 body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: #000000;
   font-family: sans-serif; /* Ensure a default font is set */
   overflow-x: hidden; /* Prevent horizontal scroll */
@@ -47,4 +47,12 @@ body {
 
 .projects {
   height: 100vh;
+}
+
+.chrome {
+  position: relative;
+  top: 0vh;
+  left: 0vw;
+  width: 1250pt;
+
 }

@@ -1,6 +1,8 @@
 export function About() {
   return (
-    <h1>ABOUT</h1>
+    <div className="about">
+      <h1>ABOUT</h1>
+    </div>
   )
 }
 

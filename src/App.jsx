@@ -10,11 +10,11 @@ function App() {
 
   return (
     <div>
-      <Banner/>
-      <Header/>
-      <About/>
-      <Projects/>
-      <Skills/>
+      <div id="banner"><Banner /></div>
+      <div id="header"><Header /></div>
+      <div id="about"><About /></div>
+      <div id="projects"><Projects /></div>
+      <div id="skills"><Skills /></div>
     </div>
   )
 }

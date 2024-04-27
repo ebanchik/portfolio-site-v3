@@ -1,6 +1,8 @@
 export function Projects() {
   return (
-    <h1>PROJECTS</h1>
+    <div className="projects">
+      <h1>PROJECTS</h1>
+    </div>
   )
 }
 

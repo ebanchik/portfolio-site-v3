@@ -1,6 +1,8 @@
 export function Skills() {
   return (
-    <h1>SKILLS</h1>
+    <div className="skills">
+      <h1>SKILLS</h1>
+    </div>
   )
 }
 

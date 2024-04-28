@@ -14,9 +14,9 @@
 }
 
 .circle-left {
-  width: 25px;
-  height: 25px;
-  background-color: black;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(12, 64, 235);
   border-radius: 50%;
   cursor: pointer;
   transition: transform 0.3s ease; /* Ensure resizing is smooth */
@@ -34,7 +34,7 @@
 
 .header-options-left {
   position: absolute;
-  top: 25px;
+  top: 40px;
   left: 0;
   visibility: hidden;
   opacity: 0;

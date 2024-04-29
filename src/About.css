@@ -1,17 +1,17 @@
+.about-container {
+  height: 100vh;
+}
+
 .about-text {
-  display: flex;  /* Enables Flexbox */
+  position: relative;
+  top: 225px;
   align-items: center; /* Centers content vertically */
-  height: 100vh; /* Make the div full height of the viewport, or adjust as needed */
-  margin: 80px 50px 0px 50px;
+  margin: 0px 100px 0px 40px;
   font-size: 50px;
 }
 
 .highlight {
   color: #007BFF; /* Example color: Bootstrap primary blue */
-}
-
-.about {
-  height: 100vh;
 }
 
 @keyframes scaleUpDown {
@@ -49,7 +49,7 @@
 }
 
 .shine {
-  background: linear-gradient(to right, hsl(0, 0%, 30%) 0%, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 0%) 20%);
+  background: linear-gradient(to right, hsl(0, 100%, 50%) 0%, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 0%) 20%);
   background-size: 200% 150%; /* Cover at least twice the width of the element */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -59,7 +59,7 @@
 
 @keyframes shine {
   0% {
-    background-position: -100%;  /* Start offscreen to the left */
+    background-position: -200%;  /* Start offscreen to the left */
   }
   100% {
     background-position: 100%;  /* End offscreen to the right */

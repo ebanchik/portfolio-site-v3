@@ -1,0 +1,67 @@
+.about-text {
+  display: flex;  /* Enables Flexbox */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Make the div full height of the viewport, or adjust as needed */
+  margin: 80px 50px 0px 50px;
+  font-size: 50px;
+}
+
+.highlight {
+  color: #007BFF; /* Example color: Bootstrap primary blue */
+}
+
+.about {
+  height: 100vh;
+}
+
+@keyframes scaleUpDown {
+  0%, 100% {
+    transform: scale(1); /* Start and end at normal size */
+  }
+  50% {
+    transform: scale(1.5); /* Scale up to 150% of the original size */
+  }
+}
+
+.highlight {
+  display: inline-block;
+  transition: color 1s ease-in-out;
+  animation: scaleUpDown 1s ease-in-out; /* Runs only once */
+  margin-left: 15px;
+}
+
+@keyframes cascadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Start above their final position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at the normal position */
+  }
+}
+
+.cascading {
+  display: inline-block; /* Allows the transformation */
+  opacity: 0; /* Start fully transparent */
+  animation: cascadeIn 0.8s ease forwards; /* Adjust timing as needed */
+  color: rgb(255, 106, 0);
+}
+
+.shine {
+  background: linear-gradient(to right, hsl(0, 0%, 30%) 0%, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 0%) 20%);
+  background-size: 200% 150%; /* Cover at least twice the width of the element */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear forwards;
+}
+
+
+@keyframes shine {
+  0% {
+    background-position: -100%;  /* Start offscreen to the left */
+  }
+  100% {
+    background-position: 100%;  /* End offscreen to the right */
+  }
+}

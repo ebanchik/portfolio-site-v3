@@ -35,10 +35,6 @@ body {
   color: black;
 }
 
-.about {
-  height: 100vh;
-}
-
 .skills {
   height: 100vh;
 }
@@ -53,12 +49,4 @@ body {
   left: 0vw;
   width: 1250pt;
 
-}
-
-.about-text {
-  display: flex;  /* Enables Flexbox */
-  align-items: center; /* Centers content vertically */
-  height: 100vh; /* Make the div full height of the viewport, or adjust as needed */
-  margin: 0px 50px 0px 50px;
-  font-size: 50px;
 }

@@ -5,15 +5,21 @@ html {
 body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  background-color: rgb(255, 246, 231);
+  background-color: rgb(255, 255, 255);
   color: #000000;
   font-family: sans-serif; /* Ensure a default font is set */
   overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: 'Spartan';
+
 }
 
 @font-face {
   font-family: 'Lingkawi';
   src: url('../public/Lingkawi-South.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Spartan';
+  src: url('../public/LeagueSpartan-VF.ttf');
 }
 
 .banner {
@@ -24,14 +30,6 @@ body {
   justify-content: center; /* Center horizontally */
 }
 
-.name {
-  font-size: 20vw; /* This might be too large depending on the viewport, consider responsive units like vw */
-  font-family: 'Lingkawi', sans-serif; /* Fallback to sans-serif */
-  color: #000000;
-  position: relative; /* Changed from absolute to relative within flex context */
-  left: 5vw; /* Maintain left offset */
-  top: 30vh
-}
 
 .header {
   color: black;
@@ -55,4 +53,12 @@ body {
   left: 0vw;
   width: 1250pt;
 
+}
+
+.about-text {
+  display: flex;  /* Enables Flexbox */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Make the div full height of the viewport, or adjust as needed */
+  margin: 0px 50px 0px 50px;
+  font-size: 50px;
 }

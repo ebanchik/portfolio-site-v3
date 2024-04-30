@@ -9,7 +9,7 @@ body {
   color: #000000;
   font-family: sans-serif; /* Ensure a default font is set */
   overflow-x: hidden; /* Prevent horizontal scroll */
-  font-family: 'Spartan';
+  font-family: 'Nineties';
 
 }
 
@@ -20,6 +20,10 @@ body {
 @font-face {
   font-family: 'Spartan';
   src: url('../public/LeagueSpartan-VF.ttf');
+}
+@font-face {
+  font-family: 'Nineties';
+  src: url('../public/PerfectlyNineties-Regular.otf');
 }
 
 .banner {

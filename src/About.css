@@ -4,15 +4,15 @@
 
 .about-text {
   position: relative;
-  top: 225px;
+  top: 300px;
   align-items: center; /* Centers content vertically */
   margin: 0px 100px 0px 40px;
   font-size: 50px;
 }
 
-.highlight {
-  color: #007BFF; /* Example color: Bootstrap primary blue */
-}
+/* .highlight {
+  color: rgb(43, 146, 255)
+} */
 
 @keyframes scaleUpDown {
   0%, 100% {
@@ -45,23 +45,9 @@
   display: inline-block; /* Allows the transformation */
   opacity: 0; /* Start fully transparent */
   animation: cascadeIn 0.8s ease forwards; /* Adjust timing as needed */
-  color: rgb(255, 106, 0);
+  /* color: rgb(12, 64, 235); */
 }
 
-.shine {
-  background: linear-gradient(to right, hsl(0, 100%, 50%) 0%, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 0%) 20%);
-  background-size: 200% 150%; /* Cover at least twice the width of the element */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 2s linear forwards;
-}
-
-
-@keyframes shine {
-  0% {
-    background-position: -200%;  /* Start offscreen to the left */
-  }
-  100% {
-    background-position: 100%;  /* End offscreen to the right */
-  }
-}
+/* .shine {
+  color: rgb(0, 30, 130);
+} */

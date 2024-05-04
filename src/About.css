@@ -6,48 +6,15 @@
   position: relative;
   top: 300px;
   align-items: center; /* Centers content vertically */
-  margin: 0px 100px 0px 40px;
+  margin: 0px 200px 0px 20px;
   font-size: 50px;
+  z-index: 1;
 }
 
-/* .highlight {
-  color: rgb(43, 146, 255)
-} */
-
-@keyframes scaleUpDown {
-  0%, 100% {
-    transform: scale(1); /* Start and end at normal size */
-  }
-  50% {
-    transform: scale(1.5); /* Scale up to 150% of the original size */
-  }
+.linkedin-photo {
+  height: 500px;
+  position: absolute;
+  top: 850px;
+  left: 70%;
+  z-index: 0;
 }
-
-.highlight {
-  display: inline-block;
-  transition: color 1s ease-in-out;
-  animation: scaleUpDown 1s ease-in-out; /* Runs only once */
-  margin-left: 15px;
-}
-
-@keyframes cascadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px); /* Start above their final position */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* End at the normal position */
-  }
-}
-
-.cascading {
-  display: inline-block; /* Allows the transformation */
-  opacity: 0; /* Start fully transparent */
-  animation: cascadeIn 0.8s ease forwards; /* Adjust timing as needed */
-  /* color: rgb(12, 64, 235); */
-}
-
-/* .shine {
-  color: rgb(0, 30, 130);
-} */

@@ -26,6 +26,8 @@ body {
   src: url('../public/PerfectlyNineties-Regular.otf');
 }
 
+
+
 .banner {
   height: 100vh; /* Ensure full viewport height */
   width: 100vw; /* Ensure full viewport width */
@@ -54,3 +56,4 @@ body {
   width: 1250pt;
 
 }
+

@@ -5,7 +5,7 @@ html {
 body {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(157, 157, 157);
   color: #000000;
   font-family: sans-serif; /* Ensure a default font is set */
   overflow-x: hidden; /* Prevent horizontal scroll */
@@ -38,9 +38,25 @@ body {
   perspective: 1000px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.chrome {
+  animation: fadeIn 2.5s ease-out forwards; /* Adjust timing as needed */
+}
+
+
+
 
 .header {
   color: black;
+  animation: fadeIn 1s ease-out forwards; /* Adjust timing as needed */
 }
 
 .skills {

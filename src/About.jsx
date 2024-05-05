@@ -1,9 +1,12 @@
+
 import './About.css';
 
 export function About() {
   return (
     <div className="about-container">
-      <img className='linkedin-photo' src="../public/linkedin2.png" alt="LinkedIn Profile"/>
+      <div className="circle-hover">
+        <img className='linkedin-photo' src="../public/linkedin2.png" alt="LinkedIn Profile"/>
+      </div>
       <div className="about-text-container">
         <h3 className="about-text">
           Ambitious Web Designer and Developer focusing on crafting 

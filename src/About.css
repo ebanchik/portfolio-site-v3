@@ -1,31 +1,45 @@
 .about-container {
-  height: auto;
-  min-height: 100vh;
-  width: 100%; /* Ensures the container takes full width */
-  overflow: hidden; /* Clears the float, ensuring the container encloses the floated image */
-}
-
-.about-text {
-  margin: 400px 0px 0px 20px;
-  font-size: 50px;
-  z-index: 1;
+  position: relative;
+  height: 100vh; /* Ensure this is at least the height of the viewport */
+  width: 100%; /* Ensure it spans the full width of the viewport */
+  overflow: hidden; /* Optional, depends on your design */
 }
 
 .linkedin-photo {
-  float: right; /* Floats the image to the right */
-  height: 400px;
+  position: absolute;
+  margin-top: 20px;
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%); /* Corrects the position by shifting half its size upwards and to the left */
+  height: 300px; /* Maintain this fixed height */
   z-index: 0;
-  margin: 250px 150px 0px 40px;
+}
+
+
+.about-text {
+  margin: 325px 200px 0px 20px;
+  font-size: 60px;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
   .linkedin-photo {
-    float: none;
-    width: 100%; /* Make the image take full width on small screens */
-    margin: 0 auto; /* Center align the image */
+    position: relative; /* Change position to relative for mobile to stack naturally */
+    top: initial;
+    transform: none;
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
   }
 
   .about-text {
-    margin: 20px;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
   }
 }

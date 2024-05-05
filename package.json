@@ -10,10 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.3",
+    "framer-motion": "^11.1.7",
     "mdb-react-ui-kit": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-full-page": "^0.1.12",
     "react-router-dom": "^6.23.0"
   },
   "devDependencies": {

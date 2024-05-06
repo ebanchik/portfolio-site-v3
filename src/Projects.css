@@ -1,0 +1,12 @@
+.project-container {
+  height: 100vh;
+}
+
+
+.projects-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 70px;
+}

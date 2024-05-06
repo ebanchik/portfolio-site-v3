@@ -1,7 +1,9 @@
+import './Projects.css';
+
 export function Projects() {
   return (
-    <div className="projects">
-      <h1>PROJECTS</h1>
+    <div className="project-container">
+      <h1 className='projects-title'>PROJECTS</h1>
     </div>
   )
 }

@@ -6,9 +6,12 @@ import Header from './Header';
 import Projects from './Projects';
 // import Skills from './Skills';
 import About from './About';
+import ScrollProgressBar from './ScrollProgressBar';
 
 function App() {
   return (
+    <div>
+    <ScrollProgressBar />
     <Router>
       <div>
         <div id="header"><Header /></div>
@@ -19,6 +22,7 @@ function App() {
         {/* Add more sections as needed */}
       </div>
     </Router>
+    </div>
   );
 }
 

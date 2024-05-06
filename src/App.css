@@ -47,16 +47,11 @@ body {
   }
 }
 
-.chrome {
-  animation: fadeIn 2.5s ease-out forwards; /* Adjust timing as needed */
-}
-
-
 
 
 .header {
   color: black;
-  animation: fadeIn 1s ease-out forwards; /* Adjust timing as needed */
+  animation: fadeIn s ease-out forwards; /* Adjust timing as needed */
 }
 
 .skills {

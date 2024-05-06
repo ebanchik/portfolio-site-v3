@@ -1,12 +1,17 @@
 .project-container {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;  /* Stack children vertically */
+  align-items: center;     /* Center children horizontally */
+  height: 100vh;           /* Full viewport height */
 }
 
-
 .projects-title {
+  margin-top: 20px; /* Provide some space at the top */
+}
+
+.keyboard-container {
+  flex-grow: 1;            /* Allow the container to take up all available space */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  font-size: 70px;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
 }

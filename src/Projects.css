@@ -3,6 +3,7 @@
   flex-direction: column;  /* Stack children vertically */
   align-items: center;     /* Center children horizontally */
   height: 100vh;           /* Full viewport height */
+  width: 100%;
 }
 
 .projects-title {
@@ -11,15 +12,21 @@
 
 .keyboard-container {
   position: relative;
+  width: 100%;
   flex-grow: 1;            /* Allow the container to take up all available space */
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center;     /* Center vertically */
 }
 
+.keyboard {
+  width: 100%;
+  height: auto;
+}
+
 
 .interactive-area {
-
+  position: relative;
   cursor: pointer;
   background-color: rgba(255, 0, 0, 0.2); /* Transparent */
   outline: none; /* Remove outline if you have it during testing */

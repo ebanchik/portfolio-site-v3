@@ -7,7 +7,7 @@
 
 .linkedin-photo {
   position: absolute;
-  margin-top: 20px;
+  margin-top: 40px;
   left: 50%; /* Horizontally center */
   transform: translate(-50%); /* Corrects the position by shifting half its size upwards and to the left */
   height: 300px; /* Maintain this fixed height */
@@ -16,8 +16,8 @@
 
 
 .about-text {
-  margin: 325px 200px 0px 20px;
-  font-size: 60px;
+  margin: 350px 200px 0px 20px;
+  font-size: 50px;
   z-index: 1;
 }
 

@@ -5,7 +5,7 @@ export function Projects() {
     alert(`Clicked on area: ${area}`);
   };
 
-  
+
   return (
     <div className="project-container">
       <h1 className='projects-title'>PROJECTS</h1>
@@ -13,15 +13,25 @@ export function Projects() {
         <img className='keyboard' src="../public/keyboard.svg" height="500px" alt="Keyboard"/>
         <div
           className="interactive-area"
-          style={{ position: 'absolute', top: '10%', left: '20%', width: '10%', height: '10%' }}
+          style={{ position: 'absolute', top: '33%', left: '8%', width: '30%', height: '15%' }}
           onClick={() => handleClick('Area 1')}
         ></div>
         <div
           className="interactive-area"
-          style={{ position: 'absolute', top: '30%', left: '30%', width: '15%', height: '15%' }}
+          style={{ position: 'absolute', top: '47%', left: '45%', width: '35%', height: '13%' }}
           onClick={() => handleClick('Area 2')}
         ></div>
-        {/* Add more interactive areas as needed */}
+        <div
+          className="interactive-area"
+          style={{ position: 'absolute', top: '20%', left: '41%', width: '50%', height: '15%' }}
+          onClick={() => handleClick('Area 2')}
+        ></div>
+        <div
+          className="interactive-area"
+          style={{ position: 'absolute', top: '62%', left: '14%', width: '65%', height: '15%' }}
+          onClick={() => handleClick('Area 2')}
+        ></div>
+        
       </div>
     </div>
   );

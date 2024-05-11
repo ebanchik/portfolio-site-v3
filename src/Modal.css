@@ -9,12 +9,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* High z-index to overlay everything else */
+  z-index: 1000;
 }
 
 .modal-content {
   background: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Allows positioning the close button relative to this container */
+  width: 90%;
+}
+
+.video-container {
+  position: relative; /* Allows absolute positioning of elements inside */
+  width: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: -10px; /* Adjusted to move outside the video bounds slightly */
+  right: 120px;
+  background: transparent; /* Ensure it's visible against video backgrounds */
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10; /* Ensure it's above the video */
 }

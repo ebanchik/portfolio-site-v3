@@ -1,4 +1,3 @@
-
 import PropTypes from 'prop-types';
 import './Modal.css';
 
@@ -8,8 +7,10 @@ const Modal = ({ isOpen, close, children }) => {
   return (
     <div className="modal-overlay" onClick={close}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
-        {children}
-        <button onClick={close}>Close</button>
+        <div className="video-container">
+          {children}
+          <button className="close-button" onClick={close}>x</button>
+        </div>
       </div>
     </div>
   );

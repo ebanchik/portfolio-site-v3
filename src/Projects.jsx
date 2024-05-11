@@ -28,7 +28,7 @@ export function Projects() {
       return (
         <>
           <video width="90%" height="auto" controls>
-            <source src="../public/armoire-walkthrough.mov" type="video/mov"/>
+            <source src="/armoire-walkthrough.mov"/>
             Your browser does not support the video tag.
           </video>
         </>

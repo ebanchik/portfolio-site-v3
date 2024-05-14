@@ -12,7 +12,7 @@
 
 .keyboard-container {
   position: relative;
-  width: 100%;
+  width: 70%;
   flex-grow: 1;            /* Allow the container to take up all available space */
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -22,13 +22,13 @@
 .keyboard {
   width: 100%;
   height: auto;
-  margin: 0px 20px 0px 20px;
+  margin: 0px 0px 0px 0px;
 }
 
 
 .interactive-area {
   position: relative;
   cursor: pointer;
-  background-color: rgba(255, 0, 0, 0.2); /* Transparent */
+  background-color: transparent; /* Transparent */
   outline: none; /* Remove outline if you have it during testing */
 }

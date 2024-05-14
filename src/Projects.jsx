@@ -8,7 +8,8 @@ export function Projects() {
   const handleClick = (area) => {
     switch (area) {
       case 'Area 1':
-        setModal({ isOpen: true, content: 'text' });
+        // Opens a new window to a specified URL when Area 1 is clicked
+        window.open('https://main--dima-studio.netlify.app/', '_blank');
         break;
       case 'Area 3':
         setModal({ isOpen: true, content: 'video' });
@@ -28,7 +29,7 @@ export function Projects() {
       return (
         <>
           <video width="90%" height="auto" controls>
-            <source src="/armoire-walkthrough.mov"/>
+            <source src="/armoire-walkthrough.mov" type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
         </>

@@ -18,6 +18,9 @@ export function Projects() {
       case 'Area 3':
         setModal({ isOpen: true, content: 'video1' });
         break;
+      case 'Area 4':
+        window.open('https://eli-banchik.netlify.app/', '_blank');
+        break;
       default:
         alert(`Clicked on area: ${area}`);
         break;

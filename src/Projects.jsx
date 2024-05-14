@@ -11,38 +11,54 @@ export function Projects() {
         // Opens a new window to a specified URL when Area 1 is clicked
         window.open('https://main--dima-studio.netlify.app/', '_blank');
         break;
+      case 'Area 2':
+        // Set the modal to open and specify the content type for Area 2
+        setModal({ isOpen: true, content: 'video2' });
+        break;
       case 'Area 3':
-        setModal({ isOpen: true, content: 'video' });
+        setModal({ isOpen: true, content: 'video1' });
         break;
       default:
         alert(`Clicked on area: ${area}`);
         break;
     }
   };
+  
 
   const closeModal = () => {
     setModal({ isOpen: false, content: '' });
   };
 
   const renderModalContent = () => {
-    if (modal.content === 'video') {
-      return (
-        <>
-          <video width="90%" height="auto" controls>
-            <source src="/armoire-walkthrough.mov" type="video/mp4"/>
-            Your browser does not support the video tag.
-          </video>
-        </>
-      );
-    } else {
-      return (
-        <>
-          <h2>Modal Content</h2>
-          <p>This is the content of the modal for Area 1!</p>
-        </>
-      );
+    switch (modal.content) {
+      case 'video1':
+        return (
+          <>
+            <video width="90%" height="auto" controls>
+              <source src="/armoire-walkthrough.mov" type="video/mp4"/>
+              Your browser does not support the video tag.
+            </video>
+          </>
+        );
+      case 'video2':
+        return (
+          <>
+            <video width="75%" height="auto" controls>
+              <source src="/Split_Walkthrough.mov" type="video/mp4"/>
+              Your browser does not support the video tag.
+            </video>
+          </>
+        );
+      default:
+        return (
+          <>
+            <h2>Modal Content</h2>
+            <p>This is the content of the modal for Area 1!</p>
+          </>
+        );
     }
   };
+  
 
   return (
     <div className="project-container">

@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Banner } from "./Banner.jsx";
 import Header from './Header';
 import Projects from './Projects';
-// import Skills from './Skills';
+import Skills from './Skills';
 import About from './About';
 import ScrollProgressBar from './ScrollProgressBar';
 
@@ -20,6 +20,7 @@ function App() {
         {/* <div id="skills"><Skills /></div> */}
         <div id="projects"><Projects /></div>
         {/* Add more sections as needed */}
+        <div id="skills"><Skills /></div>
       </div>
     </Router>
     </div>

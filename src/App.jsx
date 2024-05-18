@@ -7,7 +7,6 @@ import Projects from './Projects';
 import Skills from './Skills';
 import About from './About';
 import ScrollProgressBar from './ScrollProgressBar';
-
 function App() {
   return (
     <div>

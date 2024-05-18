@@ -19,6 +19,8 @@ const imageData = [
 
 export function Skills() {
   return (
+    <div className='Skills'>
+      <h1>Skills</h1>
     <div className="grid-container">
       {imageData.map((image, index) => (
         <div key={index} className="grid-item">
@@ -26,6 +28,7 @@ export function Skills() {
         </div>
       ))}
     </div>  
+    </div>
   );
 }
 

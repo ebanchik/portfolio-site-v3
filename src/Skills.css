@@ -1,3 +1,8 @@
+.Skills {
+  text-align: center; /* Centers text horizontally */
+  margin-top: 40px;
+}
+
 .carousel {
   height: 100vh;
   text-align: center;
@@ -7,23 +12,24 @@
 /* Skills.css */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax for minimum and fluid column width */
-  gap: 16px; /* Space between items */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for desired column width */
+  gap: 16px; /* Space between grid items */
   padding: 20px;
-  align-items: stretch; /* Ensures all grid items are the same height */
+  margin: 0px 50px 0px 50px;
 }
 
 .grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
   overflow: hidden; /* Prevents images from overflowing their container */
-  background-color:transparent; /* Optional background color */
-  border-radius: 8px; /* Optional border radius for aesthetics */
+  background-color: transparent; /* Optional: for better visibility of grid layout */
+  border-radius: 8px; /* Optional: for aesthetic rounded corners */
+  height: 200px; /* Set a fixed height or keep it flexible */
 }
 
 .grid-item img {
-  width: 100%; /* Ensures the image covers the full width of the item */
+  width: 75%; /* Ensures the image covers the full width of the item */
   height: auto; /* Keeps the image's aspect ratio intact */
   object-fit: cover; /* Ensures the image covers the area without distorting */
 }

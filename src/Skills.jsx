@@ -14,6 +14,7 @@ const imageData = [
   { src: '../public/flask-logo2.png', alt: 'Description of image 4' },
   { src: '../public/ruby-logo.png', alt: 'Description of image 4' },
   { src: '../public/postgres-logo.png', alt: 'Description of image 4' },
+  { src: '../public/figma.png', alt: 'Description of image 4' },
   // Add more images as needed
 ];
 

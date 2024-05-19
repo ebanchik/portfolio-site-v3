@@ -17,11 +17,12 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for desired column width */
   gap: 16px; /* Space between grid items */
   padding: 20px;
-  margin: 0px 50px 0px 50px;
+  margin: 0 auto; /* Center horizontally */
 }
 
+
 .grid-item {
-display: flex;
+  display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
   overflow: hidden; /* Prevents images from overflowing their container */

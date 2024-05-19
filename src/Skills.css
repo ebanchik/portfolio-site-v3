@@ -11,6 +11,8 @@
 
 /* Skills.css */
 .grid-container {
+  width: 1000px;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for desired column width */
   gap: 16px; /* Space between grid items */
@@ -29,7 +31,7 @@ display: flex;
 }
 
 .grid-item img {
-  width: 75%; /* Ensures the image covers the full width of the item */
+  width: 50%; /* Ensures the image covers the full width of the item */
   height: auto; /* Keeps the image's aspect ratio intact */
   object-fit: cover; /* Ensures the image covers the area without distorting */
 }

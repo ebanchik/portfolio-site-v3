@@ -3,18 +3,18 @@ import './Skills.css';
 
 // Example images, replace these URLs with your actual image sources
 const imageData = [
-  { src: 'public/react.png', alt: 'Description of image 3' },
-  { src: 'public/ts-logo.png', alt: 'Description of image 4' },
-  { src: 'public/Python-logo.png', alt: 'Description of image 4' },
-  { src: 'public/js-logo.png', alt: 'Description of image 1' },
-  { src: 'public/sql-logo.png', alt: 'Description of image 4' },
-  { src: 'public/html-css-logo.png', alt: 'Description of image 2' },
-  { src: 'public/rails-logo.png', alt: 'Description of image 4' },
-  { src: 'public/vue.png', alt: 'Description of image 4' },
-  { src: 'public/flask-logo2.png', alt: 'Description of image 4' },
-  { src: 'public/ruby-logo.png', alt: 'Description of image 4' },
-  { src: 'public/postgres-logo.png', alt: 'Description of image 4' },
-  { src: 'public/figma.png', alt: 'Description of image 4' },
+  { src: '/react.png', alt: 'Description of image 3' },
+  { src: '/ts-logo.png', alt: 'Description of image 4' },
+  { src: '/Python-logo.png', alt: 'Description of image 4' },
+  { src: '/js-logo.png', alt: 'Description of image 1' },
+  { src: '/sql-logo.png', alt: 'Description of image 4' },
+  { src: '/html-css-logo.png', alt: 'Description of image 2' },
+  { src: '/rails-logo.png', alt: 'Description of image 4' },
+  { src: '/vue.png', alt: 'Description of image 4' },
+  { src: '/flask-logo2.png', alt: 'Description of image 4' },
+  { src: '/ruby-logo.png', alt: 'Description of image 4' },
+  { src: '/postgres-logo.png', alt: 'Description of image 4' },
+  { src: '/figma.png', alt: 'Description of image 4' },
   // Add more images as needed
 ];
 

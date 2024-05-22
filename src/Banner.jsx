@@ -27,7 +27,7 @@ export function Banner() {
     return (
         <div className="banner">
             <motion.img className="chrome"
-                src="../public/eli-chrome.png"
+                src="public/eli-chrome.png"
                 alt="Descriptive Alt Text"
                 initial={{ scale: 1.5, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1, transition: { duration: 1.5 } }}

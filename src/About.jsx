@@ -12,7 +12,7 @@ export function About() {
       <div className="circle-hover">
         <motion.img
           className='linkedin-photo'
-          src="../public/linkedin2.png"
+          src="public/linkedin2.png"
           alt="LinkedIn Profile"
           style={{ y }}  // Apply the motion effect to the y-axis
         />

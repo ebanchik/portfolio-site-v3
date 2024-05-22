@@ -10,7 +10,7 @@ export const Header = () => {
           <p style={{ '--delay-in': '0.2s', '--delay-out': '0.1s' }}>FF</p>
           <p style={{ '--delay-in': '0.3s', '--delay-out': '0s' }}>LINKS</p>
         </div>
-        <img src="../public/plus_sign.png" alt="Profile" className="circle-left"/>
+        <img src="public/plus_sign.png" alt="Profile" className="circle-left"/>
       </div>
     </header>
   );

@@ -1,12 +1,7 @@
 .Skills {
   text-align: center; /* Centers text horizontally */
   margin-top: 40px;
-}
-
-.carousel {
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
+  margin-bottom: 0px;
 }
 
 /* Skills.css */
@@ -16,8 +11,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for desired column width */
   gap: 16px; /* Space between grid items */
-  padding: 20px;
-  margin: 0 auto; /* Center horizontally */
+  padding: 0px;
+  margin-bottom: 100px; /* Center horizontally */
 }
 
 

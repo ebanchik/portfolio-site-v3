@@ -15,10 +15,12 @@ function App() {
       <Router>
         <div>
           <div id="header"><Header /></div>
-          <div id="banner"><Banner /></div>
-          <div id="about"><About /></div>
-          <div id="projects"><Projects /></div>
-          <div id="skills"><Skills /></div>
+          <div className="scroll-container">
+            <div id="banner"><Banner /></div>
+            <div id="about"><About /></div>
+            <div id="projects"><Projects /></div>
+            <div id="skills"><Skills /></div>
+          </div>
         </div>
       </Router>
     </div>

@@ -71,4 +71,25 @@ body {
   transform-style: preserve-3d; /* Necessary for 3D transformations */
 }
 
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
 
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Each section should be a snap point */
+.scroll-container > div {
+  scroll-snap-align: start;
+  height: 100vh; /* Make each section fill the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}

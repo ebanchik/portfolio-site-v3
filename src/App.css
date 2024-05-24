@@ -85,7 +85,7 @@ body, html {
 }
 
 /* Each section should be a snap point */
-.scroll-container > div {
+.snap-section {
   scroll-snap-align: start;
   height: 100vh; /* Make each section fill the viewport */
   display: flex;

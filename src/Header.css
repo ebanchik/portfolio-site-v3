@@ -34,7 +34,7 @@
 
 .header-options-left {
   position: absolute;
-  top: 40px;
+  top: 45px;
   left: 0;
   visibility: hidden;
   opacity: 0;
@@ -48,6 +48,8 @@
   transform: translateY(-20px);
   transition: opacity 0.5s, transform 0.5s;
   transition-delay: var(--delay-out); /* Delay for cascading out effect */
+  margin: 0; /* Reset margin for <p> tags */
+  padding: 10px 0; /* Add vertical padding for spacing */
 }
 
 .hover-area-left:hover .header-options-left {
@@ -61,4 +63,46 @@
   opacity: 1;
   transform: translateY(0);
   transition-delay: var(--delay-in); /* Delay for cascading in effect */
+}
+
+.header-options-left a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 6px; /* Position the underline just below the text */
+  width: 100%;
+  height: 2px; /* Height of the underline */
+  background-color: #3b3b3b; /* Color of the underline */
+  transform: scaleX(0); /* Initially, the underline is hidden */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease; /* Smooth transition for the underline */
+}
+
+/* Hover effect for the link */
+.header-options-left a:hover {
+  color: #ffffff; /* Example hover color */
+}
+
+/* Hover effect for the underline */
+.header-options-left a:hover::after {
+  transform: scaleX(1); /* Scale the underline to make it visible */
+  transform-origin: bottom left;
+}
+
+/* Custom delay variables */
+.header-options-left a {
+  animation-delay: var(--delay-in);
+  transition-delay: var(--delay-out);
+}
+
+.header-options-left a {
+  text-decoration: none; /* Remove underline by default */
+  color: inherit; /* Inherit color from parent */
+  position: relative; /* Make the link position relative to position the pseudo-element */
+  display: inline-block; /* Ensure the link wraps the <p> tag properly */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.header-options-left p {
+  margin: 0; /* Reset margin for <p> tags */
 }
